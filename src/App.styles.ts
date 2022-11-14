@@ -47,6 +47,16 @@ justify-content: flex-end;
     justify-content: center;
     margin: 0 20px;
 }
+`;
 
+export const Grid = styled.div`
+    width: 430px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    @media (max-width: 750px) {
+        grid-template-colums: repeat(3, 1 fr);
+    }
 `;
 
